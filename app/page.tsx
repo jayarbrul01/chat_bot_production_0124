@@ -82,7 +82,7 @@ export default function ChatPage() {
               <div className="rounded-2xl bg-surface-elevated border border-border p-8 max-w-sm">
                 <p className="text-[hsl(var(--text-muted))] text-sm">
                   Say hello or ask anything. This bot responds with simple
-                  replies—you can plug in an LLM API later.
+                  replies.
                 </p>
               </div>
               <p className="text-sm text-[hsl(var(--text-muted))]">
