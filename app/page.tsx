@@ -70,9 +70,6 @@ export default function ChatPage() {
             </div>
             <div>
               <h1 className="font-semibold text-[hsl(var(--text))]">Chat Bot</h1>
-              <p className="text-xs text-[hsl(var(--text-muted))]">
-                Next.js + Node.js
-              </p>
             </div>
           </div>
         </div>
