@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 240 10% 6%;
+  --surface-elevated: 240 8% 10%;
+  --surface-muted: 240 6% 14%;
+  --accent: 24 95% 53%;
+  --accent-muted: 24 80% 45%;
+  --border: 240 6% 20%;
+  --text: 0 0% 98%;
+  --text-muted: 240 4% 65%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: hsl(var(--surface));
+  color: hsl(var(--text));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--surface-muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-muted) / 0.5);
+}
+
+/* Focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(var(--accent));
+  outline-offset: 2px;
+}
